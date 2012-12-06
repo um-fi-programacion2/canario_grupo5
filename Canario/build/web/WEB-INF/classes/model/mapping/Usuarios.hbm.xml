@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-dic-2012 18:28:25 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="Canario" name="model.entities.Usuarios" table="Usuarios">
+    <id name="idUsuario" type="long">
+      <column name="IdUsuario"/>
+      <generator class="identity"/>
+    </id>
+    <property name="usuario" type="string">
+      <column length="50" name="Usuario"/>
+    </property>
+    <property name="email" type="string">
+      <column length="50" name="Email"/>
+    </property>
+    <property name="password" type="string">
+      <column length="50" name="password"/>
+    </property>
+  </class>
+</hibernate-mapping>

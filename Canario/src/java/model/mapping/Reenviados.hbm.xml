@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-dic-2012 18:28:25 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="Canario" name="model.entities.Reenviados" table="Reenviados">
+    <id name="idRe" type="long">
+      <column name="idRe"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idUserEnvio" type="java.lang.Long">
+      <column name="idUserEnvio"/>
+    </property>
+    <property name="idMensajeCitado" type="java.lang.Long">
+      <column name="idMensajeCitado"/>
+    </property>
+  </class>
+</hibernate-mapping>

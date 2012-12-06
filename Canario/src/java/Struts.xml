@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/struts/dtds/struts-2.dtd">
+    
+    <struts>
+        <package name="pacUsuario" extends="struts-default">
+            <action name="agregarInicio" class="controller.UsuarioController" method="agregarInicio">
+                <result name="success">/Views/AgregarUsuarios.jsp</result>
+            </action>
+            <action name="listarInicio" class="controller.UsuarioController" method="listarInicio">
+                <result name="success">/Views/ListarUsuarios.jsp</result>
+            </action>
+        </struts>
